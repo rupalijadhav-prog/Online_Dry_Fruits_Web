@@ -19,7 +19,7 @@ The website allows users to view products, add them to the cart, and place order
 
 Location where save the project : C:\xampp\htdocs\dryfruites
 
-How to Run Project :
+**How to Run Project :**
      step 1: open xampp, start Apache, Mysql.
      step 2: save porject at correct location.
      step 3: creae database http://localhost/phpmyadmin 
