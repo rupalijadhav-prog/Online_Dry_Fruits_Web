@@ -1,0 +1,65 @@
+.about .box-container
+{
+    border: 0px solid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+  margin: 50px;
+  margin-top: 3rem;
+
+}
+.about .box-container .box
+{
+    border: 0px solid;
+    padding: 3rem 2rem;
+    background: #fff;
+    outline: black;
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--border-shadow);
+    float: center;
+    width: 80rem;
+    height: 35rem;
+    
+   
+
+}
+.about .box-container .box:hover
+{
+    box-shadow: 1px 1px 10px 4px  rgb(23, 207, 23);
+}
+.about .box-container .box h2
+{
+    font-size: 3rem; 
+    line-height: 1.8;
+    color: blue;
+    font-style: italic;
+    
+}
+.about .box-container .box h2:hover
+{
+  color:black;
+}
+.about .box-container .box p
+{
+    font-size: 1rem; 
+    line-height: 1.8;
+    color:black;
+    padding-bottom: 1rem 0;
+   
+}
+.about .box-container .box video
+{
+    
+    height: 35rem;
+    width: 35rem;
+    float: left;
+}
+.about .box-container .box video:hover
+{
+    border-radius: .1px;
+    border-style: solid;
+    border-color: hsl(135, 2%, 41%);
+
+}

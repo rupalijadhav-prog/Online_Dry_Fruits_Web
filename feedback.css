@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500.600;700;800;900&display=swap');
+*
+{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins',sans-serif;
+}
+.box
+{
+    background-color: #333;
+}
+.contactForm
+{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.contactForm h2
+{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactForm .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input, 
+.contactForm .inputBox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+}
+.contactForm .inputBox span
+{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactForm .inputBox input:focus~span,
+.contactForm .inputBox input:valid~span,
+.contactForm .inputBox textarea:focus~span,
+.contactForm .inputBox textarea:valid~span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]
+{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+.about .box-container
+{
+    border: 0px solid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(50rem, 1fr));
+    gap: 1.5rem;
+    
+}
+.about .box-container .box
+{
+    border: 0px solid;
+    padding: 3rem 2rem;
+    background: #fff;
+    outline: black;
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--border-shadow);
+    float: right;
+   
+
+}
+.about .box-container .box:hover
+{
+    box-shadow: 1px 1px 10px 4px  rgb(23, 207, 23);
+}
+.about .box-container .box img
+{
+    margin: 1rem 0;
+    height: 45rem;
+    width: 40rem;
+    float: left;
+}
+.about .box-container img:hover
+{
+    box-shadow: 1px 1px 10px 4px  rgb(114, 105, 111);
+}
+.about .box-container .box h3
+{
+    font-size: 3rem; 
+    line-height: 1.8;
+    color: blue;
+    font-style: italic;
+    
+}
+.about .box-container .box h3:hover
+{
+  color:black;
+}
+.about .box-container .box p
+{
+    font-size: 2rem; 
+    line-height: 1.8;
+    color:black;
+    padding-bottom: 1rem 0;
+   
+}
+
+

@@ -1,0 +1,148 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <link rel="stylesheet" type="text/css" href="payment.css"></link>
+         
+
+            
+          <style>
+            
+            .labels {
+                display: inline-block;
+                text-align: right;
+                width: 40%;
+                padding: 5px;
+                vertical-align: top;
+                margin-top: 10px;
+              }
+              .labels img
+              {
+                width: 30rem;
+                height: 3rem;
+                display:flex;
+                text-align: left;
+                vertical-align:left;
+                padding-left: 15rem;
+              }
+              .rightTab {
+                display: inline-block;
+                text-align: left;
+                width: 48%;
+                vertical-align: middle;
+              }
+              
+              .input-field {
+                height: 20px;
+                width: 280px;
+                padding: 5px;
+                margin: 10px;
+                border: 1px solid #c0c0c0;
+                border-radius: 2px;
+              }
+              
+              </style>
+        </head>
+        <body>
+        
+            
+            <div class="containear">
+              
+                <form action="">
+                  <form method="POST" action="payment.php">
+<div class="row">
+    <div class="col">
+        <h3 class="title">Billing address</h3>
+        <div class="rowTab">
+            <div class="labels">
+              <label id="name-label" for="name">* Name: </label><br>
+            </div>
+            <div class="rightTab">
+              <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+            </div>
+          </div>
+          <div class="rowTab">
+            <div class="labels">
+              <label id="name-label" for="name">* Email </label><br>
+            </div>
+            <div class="rightTab">
+              <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your email" required>
+            </div>
+          </div>
+          <div class="rowTab">
+            <div class="labels">
+              <label id="name-label" for="name">* City: </label><br>
+            </div>
+            <div class="rightTab">
+              <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your city" required>
+            </div>
+          </div>
+          <div class="rowTab">
+            <div class="labels">
+              <label id="name-label" for="name">* State: </label><br>
+            </div>
+            <div class="rightTab">
+              <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your state" required>
+            </div>
+          </div>
+          <div class="rowTab">
+            <div class="labels">
+              <label id="name-label" for="name">* zip code: </label><br>
+            </div>
+            <div class="rightTab">
+              <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your zip code" required>
+            </div>
+          </div>
+    </div>
+    <div class="col">
+        <h3 class="title">payment</h3><br>
+        <div class="inbox">
+            
+        </div>
+        <div class="rowTab">
+            <div class="labels">
+              <span>Accepted card</span><br><br>
+            
+              <label id="name-label" for="name">* Name of card: </label><br>
+              <img src="images/CREDITCARD.png" width="200" height="250"><br>
+            </div>
+            <div class="rightTab">
+              <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter name of card" required>
+            </div>
+          </div>
+          <div class="rowTab">
+            <div class="labels">
+              <label id="name-label" for="name">* credit card number: </label><br>
+            </div>
+            <div class="rightTab">
+              <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter credit card number" required>
+            </div>
+          </div>
+          <div class="rowTab">
+            <div class="labels">
+              <label id="name-label" for="name">* Exp month: </label><br>
+            </div>
+            <div class="rightTab">
+              <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter exp month" required>
+            </div>
+          </div>
+          <div class="rowTab">
+            <div class="labels">
+              <label id="name-label" for="name">* Exp year: </label><br>
+            </div>
+            <div class="rightTab">
+              <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter exp year" required>
+            </div>
+          </div>
+          
+          </div>
+          <input type="submit" value="SUBMIT" class="submitbutton">
+    </div>
+
+</div><br>
+<br>
+<br>
+</form>
+                </form>
+            </div>
+        </body>
+    </html>

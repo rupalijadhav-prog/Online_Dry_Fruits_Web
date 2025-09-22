@@ -1,0 +1,66 @@
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: url(images/images\ \(3\).jfif);
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 1rem;
+  color: black;
+  font-size: 3rem;
+}
+h1:hover
+{
+  color: chartreuse;
+}
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="address"],
+input[type="Contact no"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+input[type="number"] {
+  width: 110px;
+  height: 1.5rem;
+}
+
+.submit{
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 8rem;
+}
+
+
+input[type="Place Order"]:hover 
+{
+  
+    background-color:green;
+  
+}

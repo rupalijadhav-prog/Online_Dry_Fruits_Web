@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  
+    <link rel="stylesheet" href="userlogin.css">
+</head>
+<body>
+    <form name="userForm" method="POST" action="userlogin.php" class="form">
+        <div class="box">
+            <h2>USER LOGIN</h2><br>
+            <input type="email" name="Email" placeholder="Email" required><br>
+            <input type="password" name="Password" placeholder="Password" required><br>
+            <button class="btn" name="login">Login</button><br>
+            <p style="color: white;"><br><br>
+                <br>
+                <a style="color: white;" href="#" onclick="toggleForm()">Create New Account</a><br><br>
+               
+            </p>
+        </div>
+    </form>
+
+    <form name="signupForm" method="POST" action="userlogin.php" class="form" style="display: none;">
+        <div class="box"><br>
+            <h2>SIGN UP</h2><br><br>
+            <input type="email" name="Email" placeholder="Email" required><br>
+            <input type="password" name="Password" placeholder="Password" required><br><br><br>
+            <button class="btn" name="signup">Sign Up</button><br>
+        </div>
+    </form>
+
+    <script>
+        function toggleForm() {
+            var loginForm = document.forms['userForm'];
+            var signupForm = document.forms['signupForm'];
+
+            if (loginForm.style.display === 'block') {
+                loginForm.style.display = 'none';
+                signupForm.style.display = 'block';
+            } else {
+                loginForm.style.display = 'block';
+                signupForm.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

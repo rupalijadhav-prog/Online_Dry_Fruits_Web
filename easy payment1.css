@@ -1,0 +1,82 @@
+body
+{
+    background:#fff;
+}
+.easy .box-container
+{
+    border: 0px solid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    margin: 50px;
+    margin-top: 3rem;
+
+}
+.easy .box-container .box
+{
+    border: 1px solid;
+    padding: 3rem 2rem;
+    background: lightgray;
+    outline: black;
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--border-shadow);
+    float: center;
+    width: 80rem;
+    height: 35rem;
+
+}
+.easy .box-container .box:hover
+{
+    box-shadow: 1px 1px 10px 4px  rgb(23, 207, 23);
+    background-color: lightblue;
+}
+.wrapper
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+ .img-area
+{
+    position: relative;
+    height: 400px;
+    width: 500px;
+    margin: 10% auto ;
+    padding-left: 40rem;
+    padding-top: .1rem;
+}
+.img-area img
+{
+    position: absolute;
+    left: 0;
+    height: 400px;
+    width: 500px;
+    transition: opacity 1s ease-in-out;
+}
+.img-area img.img-front:hover
+{
+    opacity: 0;
+    cursor: pointer;
+    
+}
+.easy .box-container .box p
+{
+    font-size: 1.1rem; 
+    line-height: 1.8;
+    color:black;
+    text-align: left;
+    float: left;
+    
+   
+}
+.easy .box-container .box h2
+{
+    color: blueviolet;
+    font-size: 2rem;
+    text-align: center;
+    
+   
+}

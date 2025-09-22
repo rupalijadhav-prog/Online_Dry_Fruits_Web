@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Search</title>
+    <style>
+        /* Add your styles here if needed */
+    </style>
+</head>
+<body>
+
+<form class="search-form">
+    <input type="search" id="search-box" placeholder="Search Here .....">
+    <label for="search-box" class="fa fa-search"></label>
+</form>
+
+<div id="product-list">
+    <!-- Your product list goes here -->
+    <div class="product">Product 1</div>
+    <div class="product">Product 2</div>
+    <div class="product">Product 3</div>
+    <!-- Add more products as needed -->
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Get the search input and product list
+        var searchBox = document.getElementById('search-box');
+        var productList = document.getElementById('product-list').getElementsByClassName('product');
+
+        // Add event listener to the search input
+        searchBox.addEventListener('input', function () {
+            var searchTerm = searchBox.value.toLowerCase();
+
+            // Loop through each product in the list
+            for (var i = 0; i < productList.length; i++) {
+                var product = productList[i];
+                var productName = product.innerText.toLowerCase();
+
+                // Check if the product name contains the search term
+                if (productName.includes(searchTerm)) {
+                    product.style.display = 'block'; // Show the product
+                } else {
+                    product.style.display = 'none'; // Hide the product
+                }
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
